@@ -34,7 +34,7 @@
 
 ![image](http://ogmu8h0g3.bkt.clouddn.com/ct_css_margin_collapsing.gif)
 
-[参考链接：](http://geekplux.com/2014/03/14/collapsing_margins.htmloudao.com/)http://geekplux.com/2014/03/14/collapsing_margins.htmloudao.com/
+[参考链接：](http://geekplux.com/2014/03/14/collapsing_margins.html)http://geekplux.com/2014/03/14/collapsing_margins.html
 
 ## 文档流 
 
