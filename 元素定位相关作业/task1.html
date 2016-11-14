@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            overflow: hidden;
+            margin-left: -200px;
+            margin-top: -100px;
+            height: 200px;
+            width: 400px;
+            background: #ccc;
+        }
+
+        .round {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            background: #fc0;
+        }
+
+        .left-top {
+            top: -50px;
+            left: -50px;
+        }
+
+        .right-bottom {
+            bottom: -50px;
+            right: -50px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="round left-top"></div>
+    <div class="round right-bottom"></div>
+</div>
+</body>
+</html>
