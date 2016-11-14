@@ -6,7 +6,6 @@
 路径尽量使用相对路径，使用绝对路径如果你的文件夹或盘符发生更改，就会失效，就像如上代码一样，在我的电脑中打开就没有样式显示了。修改后如下：```<link rel="stylesheet" href="style.css">```或```<link rel="stylesheet" href="./style.css">```
 > `..`代表上一级目录，`.`代表当前目录。
 4. DIV层次关系为 灰色矩形DIV内应该包裹 两个圆，有些同学将这三个并列排布，位置无法相对的来设置了，会发生变形。
-
 ```html
 <div class="main"></div>
 <div class="yuane"></div>
