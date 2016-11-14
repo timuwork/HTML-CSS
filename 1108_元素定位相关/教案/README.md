@@ -2,15 +2,19 @@
 ### margin 叠加
 
 - 兄弟元素
+
 ![image](http://ogmu8h0g3.bkt.clouddn.com/illustrationCollapsingct_css_margin_collapsing_example_1.gif)
 
 - 父子元素
+
 ![image](http://ogmu8h0g3.bkt.clouddn.com/illustrationCollapsingct_css_margin_collapsing_example_2.gif)
 
 - 空元素
+
 ![image](http://ogmu8h0g3.bkt.clouddn.com/illustrationCollapsingct_css_margin_collapsing_example_3.gif)
 
 - 以上三种混合
+
 ![image](http://ogmu8h0g3.bkt.clouddn.com/illustrationCollapsingct_css_margin_collapsing_example_4.gif)
 
 ### 解决方案
