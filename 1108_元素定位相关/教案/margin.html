@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>margin叠加问题</title>
+    <style>
+        .wrapper {
+            /*overflow: hidden;*/
+            /*border: 1px solid transparent;*/
+            /*padding: 1px;*/
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            /*display: inline-block;*/
+        }
+        .top-box {
+            margin-bottom: 30px;
+            background: #2a5caa;
+        }
+        .bottom-box {
+            margin-top: 20px;
+            background: #7fb80e;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box top-box"></div>
+    </div>
+    <div class="wrapper">
+        <div class="box bottom-box "></div>
+    </div>
+    <!-- <hr>
+
+    <div class="box top-box"></div>
+    <div class="box bottom-box "></div> -->
+</body>
+</html>

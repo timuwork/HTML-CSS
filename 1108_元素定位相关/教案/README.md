@@ -14,12 +14,13 @@
 ![image](http://ogmu8h0g3.bkt.clouddn.com/illustrationCollapsingct_css_margin_collapsing_example_4.gif)
 
 ### 解决方案
-外层元素padding代替
-外层元素 overflow:hidden;
-内层元素透明边框 border:1px solid transparent;
-内层元素绝对定位 postion:absolute:
-内层元素 加float:left;或display:inline-block;
-内层元素padding:1px;
+- 外层元素padding代替
+- 外层元素 overflow:hidden;
+
+- 内层元素透明边框 border:1px solid transparent;
+- 内层元素绝对定位 postion:absolute:
+- 内层元素 加float:left;或display:inline-block;
+- 内层元素padding:1px;
 
 案例代码: `margin.html / margin_1.html`
 

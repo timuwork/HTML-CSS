@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Float</title>
+    <style type="text/css">
+        .wrapper {
+            width: 500px;
+            height: auto;
+            background: #999;
+            /*overflow: hidden;*/
+        }
+
+        .box {
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .wrapper .box {
+            /*float: left;*/
+        }
+
+        .head strong {
+            background: #808080;
+        }
+
+        .head em {
+            background: #ffd800;
+        }
+
+        .head span {
+            background: #b6ff00;
+        }
+
+        .blue {
+            background: blue;
+        }
+
+        .red {
+            background: red
+        }
+
+        .green {
+            background: green
+        }
+
+        .clearfix {
+            zoom: 1;
+        }
+        .clearfix:after {
+            content: '';
+            height: 0;
+            visibility: hidden;
+            display: block;
+            clear: both;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+
+        .cf:before,
+        .cf:after {
+            content: " ";
+            display: table;
+        }
+        .cf:after {
+            clear: both;
+        }
+        .cf {
+            *zoom: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <strong>strong</strong><em>em</em><span>span</span>
+    </div>
+    <div class="wrapper">
+        <div class="box red">A</div>
+        <div class="box blue">B</div>
+        <div class="box green">C</div>
+        <!-- <div class="clear"></div> -->
+    </div>
+    <!-- 下方元素不需要浮动 -->
+    <div class="box red">A</div>
+    <div class="box blue">B</div>
+    <div class="box green">C</div>
+</body>
+
+</html>

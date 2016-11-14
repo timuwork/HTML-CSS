@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>垂直居中（block元素,unknow width and height）</title>
+    <style>
+        .parent {
+          position: relative;
+          height: 500px;
+          width: 200px;
+          background: #000;
+        }
+        .child {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <p>I'm a block-level element of an unknown height and width, centered vertically within my parent.</p>
+        </div>
+    </div>
+</body>
+</html>
