@@ -5,19 +5,15 @@
 3. style外联样式表路径设置有问题，不清楚绝对路径和相对路径。```<link rel="stylesheet" href="../3/style.css">```
 路径尽量使用相对路径，使用绝对路径如果你的文件夹或盘符发生更改，就会失效，就像如上代码一样，在我的电脑中打开就没有样式显示了。修改后如下：```<link rel="stylesheet" href="style.css">```或```<link rel="stylesheet" href="./style.css">```
 > `..`代表上一级目录，`.`代表当前目录。
-4. DIV层次关系为 灰色矩形DIV内应该包裹 两个圆，有些同学将这三个并列排布，位置无法相对的来设置了，会发生变形。
-```html
+4. DIV层次关系为 灰色矩形DIV内应该包裹 两个圆，有些同学将这三个并列排布，位置无法相对的来设置了，会发生变形。```html
 <div class="main"></div>
 <div class="yuane"></div>
 <div class="yuanr"></div>
-```
-修改后如下
-```html
+```修改后如下```html
 <div class="main">
     <div class="yuane"></div>
     <div class="yuanr"></div>
-</div>
-```
+</div>```
 5. 有些同学碰到了圆显示在矩形外，无法被隐藏，这里可以在外层矩形上设置`overflow:hidden`将圆形的部分隐藏掉。
 6. 圆怎么放到左上角和右上角，在外层矩形框设置`position:relative`，圆可以用`position:absolute`来进行定位
 7. 外层矩形的居中问题。可以参看此处：[各种居中的方法](https://css-tricks.com/centering-css-complete-guide/)。
