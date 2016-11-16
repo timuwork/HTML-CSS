@@ -1,0 +1,195 @@
+html,
+body,
+div,
+dd,
+dt,
+p,
+span {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 10px 0;
+    margin: 0;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.cf {
+    clear: both;
+}
+
+
+body {
+    width: 100%;
+}
+
+.header {
+    height: 60px;
+    background: #333333;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 60px;
+    width: 100px;
+}
+
+.logo a {
+    display: block;
+}
+
+.nav {
+    line-height: 60px;
+    float: right;
+    font-size: 12px;
+    margin: 0;
+}
+
+.nav li {
+    float: left;
+    margin-right: 20px;
+}
+
+.nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #a5aab0;
+}
+
+.container {
+    background: #dedede;
+    height: 100%;
+    padding: 20px;
+}
+
+.article {
+    padding: 20px 20px;
+    background: #ffffff;
+    border: 1px solid #cdcdcd;
+    box-shadow: 1px 1px 2px #9f9f9f;
+    margin-bottom: 20px;
+}
+
+.article ul {
+    list-style: none;
+}
+.text p {
+    line-height: 1.5em;
+    text-indent: 2em;
+}
+
+.article h6 {
+    color: #a6a6ab;
+}
+
+.article h3 {
+    color: #797881;
+}
+
+.pics dd {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    text-align: center;
+    width: 100px;
+    height: 110px;
+    line-height: 25px;
+    margin: 10px 0;
+}
+
+.pics img {
+    width: 100px;
+    height: 80px;
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+}
+
+.table th {
+    background: #333;
+    color: #ffffff;
+    text-align: left;
+}
+
+.table tr:hover {
+    background: #999;
+}
+
+.table td, .table th {
+    border: 1px solid #cccccc;
+}
+
+.table td, .table th {
+    padding: 5px;
+}
+
+.form form {
+    width:100%;
+    font-size: 14px;
+}
+.wrapper {
+    width:800px;
+    margin:0 auto;
+}
+.wrapper > div {
+    margin: 10px 0;
+}
+
+.form h3{
+    color: #000;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border-left: 3px solid #cccccc;
+}
+
+.label {
+    display: inline-block;
+    text-align: right;
+    width: 150px;
+}
+.collection {
+    display: inline-block;
+    vertical-align: top;
+}
+.collection p {
+    padding: 10px;
+    font-size: 12px;
+    color: #999;
+}
+.form textarea {
+    height:100px;
+    width: auto;
+    vertical-align: top;
+    display: inline-block;
+}
+.btn {
+    width:100%;
+    background: #3355d0;
+    height:40px;
+    border-radius: 10px;
+    color: #fff;
+    border:0;
+}
+
+.footer {
+    background: #000;
+    text-align: center;
+    line-height: 70px;
+    height: 70px;
+    font-size: 12px;
+    color: #ffffff;
+}

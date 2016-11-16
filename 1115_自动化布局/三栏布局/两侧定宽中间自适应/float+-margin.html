@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 三列布局 </title>
+<style type="text/css">
+html,body{margin:0; padding: 0;}
+.left,.right,.m-box .center { height: 200px; line-height:200px; text-align:center; }
+
+.m-box { float:left; width: 100%;}
+.m-box .center {margin:0 210px;background-color: #666;}
+.left,.right {float: left; width: 200px; margin-left: -100%; background-color: #ccc;}
+.right {margin-left: -200px;}
+</style>
+</head>
+<body>
+<div class="m-box">
+    <div class="center">中</div>
+</div>
+<div class="left">左</div>
+<div class="right">右</div>
+</body>
+</html>

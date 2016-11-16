@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>流式布局</title>
+<style type="text/css">
+html,body,p{margin:0; padding: 0;}
+.box { width: 340px; border: 1px #c2c2c2 solid; margin: 0 auto;  overflow: hidden; }
+.box .list { float: left; width: 100px; margin: 10px 0 0 10px;  }
+p { background-color: gray; margin-bottom: 10px; }
+.p1 { height: 100px; }
+.p2 { height: 125px; }
+.p3 { height: 150px; }
+.p4 { height: 200px; }
+</style>
+</head>
+<body>
+<div class="box">
+   <div class="list">
+       <p class="p4">4</p>
+       <p class="p1">1</p>
+       <p class="p3">3</p>
+       <p class="p2">2</p>
+       <p class="p4">4</p>
+       <p class="p1">1</p>
+       <p class="p3">3</p>
+       <p class="p2">2</p>
+   </div>
+   <div class="list">
+       <p class="p2">2</p>
+       <p class="p4">4</p>
+       <p class="p3">3</p>
+       <p class="p1">1</p>
+       <p class="p2">2</p>
+       <p class="p4">4</p>
+       <p class="p3">3</p>
+       <p class="p1">1</p>
+   </div>
+   <div class="list">
+       <p class="p4">4</p>
+       <p class="p1">1</p>
+       <p class="p2">2</p>
+       <p class="p3">3</p>
+       <p class="p4">4</p>
+       <p class="p1">1</p>
+       <p class="p2">2</p>
+       <p class="p3">3</p>
+   </div>
+</div>
+</body>
+</html>

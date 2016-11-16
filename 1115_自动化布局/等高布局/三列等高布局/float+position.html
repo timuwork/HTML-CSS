@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>三列自适应高布局</title>
+<style type="text/css">
+html,body{margin:0; padding: 0;}
+
+.fl { float: left; }
+.container3 { background:green; overflow: hidden; position: relative; }
+.container2 { background:yellow; position: relative; right: 30%;/*大小等于col3的宽度*/ }
+.container1 { width: 100%; background:red; position: relative; right: 40%; /*大小等于col2的宽度*/}
+.col1 { width: 26%;/*增加了2%的padding，所以宽度减少4%*/ position: relative; left: 72%;/*距左边呀增加2%就成72%*/ overflow: hidden; }
+.col2 { width: 36%;/*增加了2%的padding，所以宽度减少4%*/ position: relative; left: 76%; /*距左边有三个padding为2%,所以距离变成76%*/overflow: hidden; }
+.col3 { width: 26%; /*增加了2%的padding，所以宽度减少4%*/position: relative; left: 80%;/*距左边5个padding为2%，所以距离变成80%*/ overflow: hidden; }
+</style>
+</head>
+<body>
+<div class="container3 fl">
+    <div class="container2 fl">
+        <div class="container1 fl">
+            <div class="col1 fl">左<br/>小时候我有一个梦想，长大了我就忘了...</div>
+            <div class="col2 fl">中<br/>小时候我有一个梦想，长大了我就忘了...小时候我有一个梦想，长大了我就忘了...</div>
+            <div class="col3 fl">右<br/>小时候我有一个梦想，长大了我就忘了...小时候我有一个梦想，长大了我就忘了...小时候我有一个梦想，长大了我就忘了...</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

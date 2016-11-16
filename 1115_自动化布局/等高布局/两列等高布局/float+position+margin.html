@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>两列等高布局</title>
+<style type="text/css">
+html,body{margin:0; padding: 0;}
+.clearfix { zoom: 1 }/*兼容ie*/
+.clearfix:after { content: ""; display: block; height: 0; line-height: 0; font-size: 0; visibility: hidden; clear: both; }/*在写HTML代码的时候，发现在Firefox等符合W3C标准的浏览器中，如果有一个DIV作为外部容器，内部的DIV如果设置了float样式，则外部的容器DIV因为内部没有clear，导致不能被撑开。
+这个clearfix的CSS使用了after这个伪对象，它将在应用clearfix的元素的结尾添加content中的内容。在这里添加了一个句号"."，并且把它的display设置成block；高度设为0；clear设为both；visibility设为隐藏。这样就达到了撑开容器的目的啦。*/
+/*这些东西的原理，就是让脱离文档流的元素回归到流当中，并且做一些浏览器的兼容*/
+/*用after before的伪元素，需要给一个content但这个元素又不能被看到，所以就有了visibility: hidden; 和 height:0*/
+
+.wrap { width: 950px; margin: 0 auto; background: #ccc; }
+.content { margin-left: 150px; border-left: 1px solid #666; background: #ddd; }
+.main { float: left; width: 100%;  background: #ccc; margin-left: 150px;}
+.side { float: left; width: 150px; margin-left: -950px; position: relative; background: #666;}
+</style>
+</head>
+<body>
+<div class="wrap">
+    <div class="content clearfix">
+        <div class="main">
+            中-等高吗？<br />
+            中-等高吗？<br />
+            中-等高吗？<br />
+            中-等高吗？<br />
+            中-等高吗？<br />
+        </div>
+        <div class="side">
+            左-等高吗？<br />
+        </div>
+    </div>
+</div>
+</body>
+</html>

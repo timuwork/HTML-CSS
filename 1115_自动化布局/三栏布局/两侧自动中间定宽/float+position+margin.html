@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 三列布局 </title>
+<style type="text/css">
+html,body{margin:0; padding: 0;}
+
+.m-box{ height: 200px; line-height:200px; text-align:center; background-color: #ccc;}
+.warp1{float:left; width:50%;_margin-right:-3px;}
+.warp2{margin-left:50%; text-align:right; _margin-left:0; _zoom:1;}
+.m-box1{ margin-right:100px;}
+.m-box2{margin-left:100px;}
+.m-box3{ background:red;width:200px; position:absolute; left:50%; margin-left:-100px; top:0; z-index:2;}
+</style>
+</head>
+<body>
+<div class="warp1">
+    <div class="m-box m-box1">左</div>
+</div>
+<div class="warp2">
+    <div class="m-box m-box2">右</div>
+</div>
+<div class="m-box m-box3">中</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>流式布局</title>
+<style type="text/css">
+html,body,p { margin: 0; padding: 0; }
+#box { position: relative; width: 360px; height: 400px; background-color: #f2f2f2; overflow: auto; margin: 0 auto; }
+
+p { position: absolute; top: 0; left: 0; width: 100px; background-color: gray; }
+.p1 { height: 100px; }
+.p2 { height: 125px; }
+.p3 { height: 150px; }
+.p4 { height: 200px; }
+</style>
+</head>
+<body>
+<div id="box">
+    <p class="p3">3</p>
+    <p class="p2">2</p>
+    <p class="p1">1</p>
+
+    <p class="p2">2</p>
+    <p class="p3">3</p>
+    <p class="p4">4</p>
+
+    <p class="p3">3</p>
+    <p class="p2">2</p>
+    <p class="p1">1</p>
+
+    <p class="p2">2</p>
+    <p class="p3">3</p>
+    <p class="p4">4</p>
+</div>
+<script type="text/javascript">
+var oBox = document.getElementById("box");
+var aList = oBox.getElementsByTagName("p");
+for(var i = 0, len = aList.length; i < len; i += 1)
+{
+    var iCol = 3,iNum = i%iCol,iMargin = 10;
+    aList[i].style.left = (iNum+1)*iMargin+parseInt(aList[0].offsetWidth*iNum, 10)+"px";
+
+    if(i >= iCol){
+        aList[i].style.top = aList[i-iCol].offsetHeight+aList[i-iCol].offsetTop+iMargin+"px";
+    }
+}
+</script>
+</body>
+</html>
