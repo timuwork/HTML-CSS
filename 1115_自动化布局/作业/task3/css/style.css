@@ -1,0 +1,74 @@
+.clearfix::before, .clearfix::after {
+    content:"";
+    display:table;
+}
+.clearfix::after {
+    clear:both;
+}
+.clearfix {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+.fl {
+    float: left;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    padding: 20px;
+    margin: 20px;
+    min-width: 500px;
+    height: auto;
+    background: #eee;
+    border: 1px solid #999;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+    background: #ddd;
+    border: 1px solid #999;
+    text-align: center;
+    line-height: 78px;
+}
+
+.team {
+    float: left;
+    width: 158px;
+    height: auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #999;
+}
+.team .logo {
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.intro {
+    margin: 0 142px 0 222px;
+    min-width: 80px;
+    padding: 20px;
+    background: #ffffff;
+    border:1px solid #999;
+}
+.intro p {
+    overflow:hidden;
+    line-height:25px;
+    text-indent: 2em;
+    word-wrap:break-word;
+}
+.persons {
+    float: right;
+    width: 78px;
+    height: auto;
+    padding: 20px;
+    background: #ffffff;
+    border:1px solid #999;
+}
+.persons .logo {
+    margin-bottom: 20px;
+}
+.persons .logo:last-child {
+    margin-bottom: 0;
+}
