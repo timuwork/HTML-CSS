@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>排行榜</title>
+    <style type="text/css">
+.rank{
+    background-color: #fff;
+    font-size: 14px;
+    padding: 20px 15px;
+    color: #666;
+}
+.rank-title{
+    margin-bottom: 20px;
+}
+.item{
+    font-size: 0;
+    margin-bottom: 10px;
+}
+.item div{
+    display: inline-block;
+    font-size: 12px;
+}
+.num{
+    background-color: #52385B;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    text-align: center;
+    line-height: 16px;
+    color: #fff;
+}
+.rank-wrap{
+    width: 100px;
+    height: 16px;
+    border:1px solid #52385B;
+    margin: 0 15px;
+    position: relative;
+    top: 3px;
+}
+.rank-scale{
+    background-color: #52385B;
+    height: 16px;
+    /*width: 100%;*/
+}
+    </style>
+</head>
+<body>
+<div class="rank">
+    <div class="rank-title">人气排行榜</div>
+    <div class="rank-body">
+<!--第一个item-->         
+         <div class="item">
+                <div class="num">1</div>
+                <div class="rank-wrap">
+                    <div class="rank-scale" style="width:100%"></div>
+                </div>
+                <div class="rank-name">ui.tree</div>
+        </div>
+<!--第二个item-->
+        <div class="item">
+                <div class="num">2</div>
+                <div class="rank-wrap">
+                    <div class="rank-scale" style="width:80%"></div>
+                </div>
+                <div class="rank-name">util.trim</div>
+        </div>
+<!--第三个item-->
+        <div class="item">
+                <div class="num">3</div>
+                <div class="rank-wrap">
+                    <div class="rank-scale" style="width:60%"></div>
+                </div>
+                <div class="rank-name">app.todo</div>
+        </div>
+<!--第四个item-->
+        <div class="item">
+                <div class="num">4</div>
+                <div class="rank-wrap">
+                    <div class="rank-scale" style="width:40%"></div>
+                </div>
+                <div class="rank-name">ui.tab</div>
+        </div>
+<!--第五个item-->
+        <div class="item">
+                <div class="num">5</div>
+                <div class="rank-wrap">
+                    <div class="rank-scale" style="width:20%"></div>
+                </div>
+                <div class="rank-name">util.addClass</div>
+        </div>        
+    </div>
+</div>
+
+</body>
+</html>
