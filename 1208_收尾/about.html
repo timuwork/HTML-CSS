@@ -6,13 +6,16 @@
 	<style type="text/css">
 .about{
     width: 980px;
+    /*margin，padding定位*/
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 20px;
     padding-top: 10px;
-    height: 1300px;
+    /*背景*/
     background-color: #fff;
+    /*position定位*/
     position: relative;
+    /*z轴定位*/
     z-index: -2;
 }
 .absolute-left{
@@ -20,48 +23,64 @@
     left: 50%;
 }
 .time-line{
+    /*长宽*/
     width: 5px;
-    height: 1320px;
+    height: 500px;
+    /*position定位*/
     position: absolute;
     top: 0;
+    /*margin定位*/
     margin-left: -2px;
+    /*背景*/
     background-color: #eee;
+    /*z轴定位*/
     z-index: -1;
 }
 img{
     display: block;
 }
-.img-person{
+.img-leopard{
+    /*长宽*/
     width: 160px;
     height: 160px;
+    /*border*/
     border-radius: 90px;
     border:10px solid #eee;
+    /*定位*/
     top: -60px;
     margin-left: -90px;
 }
-.img-small{
-	width: 980px;
-    margin: 0 auto;
+.img-bird{
+    /*长宽*/
     width: 100px;
     height:100px;
+    /*border*/
     border:5px solid #eee;
     border-radius: 60px;
     /*margin-left: -55px;*/
-    margin-top: 260px;
+    /*margin*/
+    margin: 0 auto;
+    margin-top: 160px;
     margin-bottom: 110px;
 
 }
-.year{
-    width: 980px;
+.year{ 
+    /*margin*/
     margin: 0 auto;
+    margin-top: 200px;
     margin-bottom: 35px;
+    /*长宽*/
     width: 60px;
     height: 25px;
-    border:5px solid #eee;
+    /*居中*/
     text-align: center;
     line-height: 25px;
+    /*背景*/
     background-color: #fff;
+    /*border*/
     border-radius: 10px;
+    border:5px solid #eee;
+    /*文字*/
     font-size: 14px;
     color: #666;
 }
@@ -91,15 +110,16 @@ img{
     font-size: 12px;
     padding-top: 5px;
 }
-
 	</style>
 </head>
 <body>
 		<div class="about">
             <div class="time-line absolute-left"></div>
-            <img class="img-person absolute-left" src="images/leopard.jpg">
+            <img class="img-leopard absolute-left" src="images/leopard.jpg">
+            
             <div class="year">2016</div>
-            <img class="img-small" src="images/bird.jpg">
+            
+            <img class="img-bird" src="images/bird.jpg">
             
             <div class="time-right name">
                 <p>前端的世界很有趣，加油吧！摇滚吧！这是一段自我介绍这是一段自我介绍这是一段自我介绍这是一段自我介绍这是一段自我介绍这是一段自我介绍这是一段自我介绍这是一段自我介绍这是一段自我介绍这是一段自我介绍</p>
